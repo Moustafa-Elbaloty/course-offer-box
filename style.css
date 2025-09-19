@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: system-ui, sans-serif
+}
+
+.container {
+    background: #51509b;
+    box-shadow: 0 0 9px 0px #eeeeee80;
+    border-radius: 10px;
+    padding: 35px;
+
+}
+
+.container .special-heading {
+    color: white;
+
+}
+
+.container .special-heading p {
+    margin: 18px 0 50px;
+    font-size: 13px
+}
+
+.container .box {
+    display: flex;
+    align-items: center
+}
+
+
+
+.container .box .offer {
+    background: white;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+    border-radius: 13px;
+    box-shadow: 0 0 14px 4px #0c0c0c;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.container .box .offer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.container .box .offer:first-child h2 {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.container .box .offer .features li {
+    border-bottom: 1px solid #d8cdcda3;
+    padding: 15px 0px;
+    line-height: 1.5;
+}
+
+.container .box .offer:last-child {
+    background: white;
+    position: relative;
+    z-index: 0;
+    right: 15px;
+    padding-left: 35px;
+    min-width: 320px
+}
+
+.container.loaded .box .offer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.container.loaded .box .offer:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+/* wating until frist  */
+.container.loaded .box .offer:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.container .box .offer .purchase-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 35px
+}
+
+.container .box sup,
+.container .box sub {
+    font-size: 15px
+}
+
+.container .box .offer .purchase-section button {
+    background: #e5af40;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.container .box .offer .purchase-section button:hover {
+    background: #d48c00;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+@media (max-width:881px) {
+    .box {
+        flex-direction: column;
+        gap: 20px
+    }
+
+
+}

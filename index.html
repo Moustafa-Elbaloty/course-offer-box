@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Course Offer Box</title>
+    <script>
+        /* after loading add class */
+        window.addEventListener("load", () => {
+            document.querySelector(".container").classList.add("loaded");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="special-heading">
+            <h1>Buy the course</h1>
+            <p> join over 2.300 developers who already stepped up their database preformance game!</p>
+        </div>
+        <div class="box">
+            <div class="offer">
+                <h2>premium package</h2>
+                <ul class="features">
+                    <li>Access to a total of 28 lessons</li>
+                    <li>Includes 6 additional advanced lessons on natural sorting, full-text searching and geospatial
+                        queries</li>
+                    <li>Full source code for all lessons, including MySQL, Postgres and SQLite versions (where possible)
+                    </li>
+                    <li> Over two full hours of video content</li>
+                    <li> Stream online or download videos</li>
+                </ul>
+                <div class="purchase-section">
+                    <span>
+                        <sup>$</sup>
+                        149
+                        <sub>usd</sub>
+                    </span>
+                    <button class="buy-btn">
+                        Buy Now
+                    </button>
+                </div>
+
+            </div>
+            <div class="offer">
+                <h2>✔ Essentials Package</h2>
+                <ul class="features">
+                    <li>Access to the first 22 lessons</li>
+                    <li> Just under two hours of video content</li>
+                    <li> Stream online or download videos</li>
+                </ul>
+                <div class="purchase-section">
+                    <span>
+                        <sup>$</sup>
+                        99
+                        <sub>usd</sub>
+                    </span>
+                    <button class="buy-btn">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
